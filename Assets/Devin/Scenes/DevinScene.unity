@@ -376,6 +376,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myManager: {fileID: 0}
+  cursorMode: 0
   myText: Blah blah blah
 --- !u!61 &599906254
 BoxCollider2D:
@@ -434,6 +435,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canInteract: 1
   popup: {fileID: 309094292}
+  normalCursor: {fileID: 2800000, guid: 2e71a8202d3b4a3448ec85ced5a40265, type: 3}
+  hoverCursor: {fileID: 2800000, guid: fe2443101ded6f544b32f8dc8690c367, type: 3}
 --- !u!4 &762429660
 Transform:
   m_ObjectHideFlags: 0
