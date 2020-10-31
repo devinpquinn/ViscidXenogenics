@@ -11,5 +11,6 @@ public class Inspectable : Interactable
     {
         myManager.popup.transform.Find("Text").GetComponent<Text>().text = myText;
         myManager.popup.SetActive(true);
+        myManager.canInteract = false;
     }
 }
