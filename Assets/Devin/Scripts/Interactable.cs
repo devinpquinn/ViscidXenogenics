@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
-public class Interactable : MonoBehaviour
+public class Interactable : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public Manager myManager;
     public CursorMode cursorMode = CursorMode.Auto;
@@ -13,23 +14,22 @@ public class Interactable : MonoBehaviour
         myManager = Object.FindObjectOfType<Manager>();
     }
 
-    void OnMouseEnter()
+    public void OnPointerClick(PointerEventData eventData)
+    {
+        if (myManager.canInteract)
+        {
+            MyEvent();
+        }
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
     {
         Cursor.SetCursor(myManager.hoverCursor, hotSpot, cursorMode);
     }
 
-    void OnMouseExit()
+    public void OnPointerExit(PointerEventData eventData)
     {
         Cursor.SetCursor(myManager.normalCursor, Vector2.zero, cursorMode);
-    }
-    
-
-    private void OnMouseDown()
-    {
-        if(myManager.canInteract)
-        {
-            MyEvent();
-        }
     }
 
     public virtual void MyEvent()
