@@ -137,7 +137,7 @@ PrefabInstance:
     - target: {fileID: 5858271606931251296, guid: a2f95a33070777349a24b45725599d6f,
         type: 3}
       propertyPath: myText
-      value: "You won\u2019t have any problem with that.  I\u2019ve got government
+      value: "You won\u2019t have any problem with that. I\u2019ve got government
         clearance! Not to mention there\u2019s seemingly <i>no one else here.</i>"
       objectReference: {fileID: 0}
     - target: {fileID: 5858271606931251297, guid: a2f95a33070777349a24b45725599d6f,
