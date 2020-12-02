@@ -12,8 +12,15 @@ public class Manager : MonoBehaviour
 
     private void Start()
     {
-        popup.transform.Find("Button").GetComponent<Button>().onClick.AddListener(ClosePanel);
         Cursor.SetCursor(normalCursor, Vector2.zero, CursorMode.Auto);
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Mouse0) && popup.activeInHierarchy == true)
+        {
+            ClosePanel();
+        }
     }
 
     public void ClosePanel()
