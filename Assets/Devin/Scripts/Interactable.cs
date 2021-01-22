@@ -7,7 +7,8 @@ public class Interactable : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
 {
     public Manager myManager;
     public CursorMode cursorMode = CursorMode.Auto;
-    private Vector2 hotSpot = Vector2.zero;
+    public Vector2 hotSpot = Vector2.zero;
+    private bool interacted = false;
 
     private void Start()
     {
@@ -19,10 +20,15 @@ public class Interactable : MonoBehaviour, IPointerClickHandler, IPointerEnterHa
         if (myManager.canInteract)
         {
             MyEvent();
+            if(interacted == false)
+            {
+                myManager.AddInspected();
+            }
+            interacted = true;
         }
     }
 
-    public void OnPointerEnter(PointerEventData eventData)
+    public virtual void OnPointerEnter(PointerEventData eventData)
     {
         Cursor.SetCursor(myManager.hoverCursor, hotSpot, cursorMode);
     }
