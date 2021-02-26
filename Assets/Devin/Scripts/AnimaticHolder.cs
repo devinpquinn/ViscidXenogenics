@@ -5,9 +5,15 @@ using UnityEngine;
 public class AnimaticHolder : MonoBehaviour
 {
     public Manager myManager;
-    public GameObject[] myElements;
+    public Transform elementsParent;
+    private GameObject[] myElements;
     public Animator fadeAnim;
     private int index = 0;
+
+    private void Awake()
+    {
+        FillAnimatic();
+    }
 
     public void StartAnimatic()
     {
@@ -18,10 +24,21 @@ public class AnimaticHolder : MonoBehaviour
         fadeAnim.Play("fadeOut");
     }
 
+    public void FillAnimatic()
+    {
+        myElements = new GameObject[elementsParent.childCount];
+        for(int i = 0; i < elementsParent.childCount; i++)
+        {
+            GameObject found = elementsParent.GetChild(i).gameObject;
+            myElements[i] = found;
+            found.GetComponent<AnimaticElement>().myHolder = this;
+        }
+    }
+
     public void NextElement()
     {
         index++;
-        if (myElements.Length > index + 1)
+        if (myElements.Length > index)
         {
             myElements[index].SetActive(true);
         }
@@ -33,8 +50,19 @@ public class AnimaticHolder : MonoBehaviour
 
     public void EndAnimatic()
     {
+        index = 0;
         myManager.isAnimatic = false;
         myManager.ClosePanel();
         fadeAnim.Play("fadeIn");
+        StartCoroutine(DisableElements());
+    }
+
+    IEnumerator DisableElements()
+    {
+        yield return new WaitForSeconds(1f);
+        foreach(GameObject x in myElements)
+        {
+            x.SetActive(false);
+        }
     }
 }
