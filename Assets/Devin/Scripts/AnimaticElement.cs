@@ -4,12 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class AnimaticElement : MonoBehaviour, IPointerClickHandler
+public class AnimaticElement : MonoBehaviour
 {
     public string[] myText;
     public Animator myAnim;
     public AnimaticHolder myHolder;
     private int index;
+    private bool done = false;
 
     private void Awake()
     {
@@ -17,12 +18,21 @@ public class AnimaticElement : MonoBehaviour, IPointerClickHandler
         index = 0;
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    private void Update()
     {
-        if(myText.Length > index + 1)
+        if(Input.GetKeyDown(KeyCode.Mouse0) && !done)
         {
-            index++;
-
+            if (myText.Length > index + 1)
+            {
+                index++;
+                myHolder.myManager.SetText(myText[index]);
+            }
+            else
+            {
+                myAnim.Play("animaticOut");
+                done = true;
+                myHolder.NextElement();
+            }
         }
     }
 }
