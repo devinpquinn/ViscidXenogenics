@@ -10,7 +10,7 @@ public class Inspectable : Interactable
 
     public override void MyEvent()
     {
-        myManager.popup.transform.Find("Text").GetComponent<Text>().text = myText;
+        myManager.SetText(myText);
         myManager.popup.SetActive(true);
         myManager.canInteract = false;
     }
