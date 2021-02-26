@@ -16,20 +16,29 @@ public class Manager : MonoBehaviour
     public GameObject moveOn;
     public string nextScene;
     public GameObject fadeScreen;
+    private Text myText;
+    public bool isAnimatic;
 
     private void Start()
     {
         Cursor.SetCursor(normalCursor, Vector2.zero, CursorMode.Auto);
         moveOn.SetActive(false);
         fadeScreen.SetActive(true);
+        myText = popup.transform.Find("Text").GetComponent<Text>();
+        isAnimatic = false;
     }
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse0) && popup.activeInHierarchy == true)
+        if(Input.GetKeyDown(KeyCode.Mouse0) && popup.activeInHierarchy == true && isAnimatic == false)
         {
             ClosePanel();
         }
+    }
+
+    public void SetText(string toSet)
+    {
+        myText.text = toSet;
     }
 
     public void AddInspected()
