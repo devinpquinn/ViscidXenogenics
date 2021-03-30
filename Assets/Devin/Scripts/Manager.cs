@@ -8,6 +8,7 @@ public class Manager : MonoBehaviour
 {
     public bool canInteract = true;
     public GameObject popup;
+    public GameObject animaticPopup;
     public Texture2D normalCursor;
     public Texture2D hoverCursor;
     public Texture2D doorCursor;
@@ -17,6 +18,7 @@ public class Manager : MonoBehaviour
     public string nextScene;
     public GameObject fadeScreen;
     private Text myText;
+    private Text animaticText;
     public bool isAnimatic;
 
     private void Start()
@@ -25,6 +27,7 @@ public class Manager : MonoBehaviour
         moveOn.SetActive(false);
         fadeScreen.SetActive(true);
         myText = popup.transform.Find("Text").GetComponent<Text>();
+        animaticText = animaticPopup.transform.Find("Text").GetComponent<Text>();
         isAnimatic = false;
     }
 
@@ -39,6 +42,11 @@ public class Manager : MonoBehaviour
     public void SetText(string toSet)
     {
         myText.text = toSet;
+    }
+
+    public void SetAnimaticText(string toSet)
+    {
+        animaticText.text = toSet;
     }
 
     public void AddInspected()

@@ -17,7 +17,7 @@ public class AnimaticHolder : MonoBehaviour
 
     public void StartAnimatic()
     {
-        myManager.popup.SetActive(true);
+        myManager.animaticPopup.SetActive(true);
         myManager.canInteract = false;
         myManager.isAnimatic = true;
         myElements[0].SetActive(true);

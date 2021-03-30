@@ -25,7 +25,7 @@ public class AnimaticElement : MonoBehaviour
             if (myText.Length > index + 1)
             {
                 index++;
-                myHolder.myManager.SetText(myText[index]);
+                myHolder.myManager.SetAnimaticText(myText[index]);
             }
             else
             {
