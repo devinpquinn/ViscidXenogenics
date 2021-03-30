@@ -3,7 +3,13 @@ guid: 2dcb02076edc3444197755ead548c08a
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - popup: {instanceID: 0}
+  - normalCursor: {instanceID: 0}
+  - hoverCursor: {instanceID: 0}
+  - doorCursor: {instanceID: 0}
+  - moveOn: {instanceID: 0}
+  - fadeScreen: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
