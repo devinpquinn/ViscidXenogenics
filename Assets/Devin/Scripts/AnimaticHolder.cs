@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class AnimaticHolder : MonoBehaviour
 {
@@ -9,10 +10,16 @@ public class AnimaticHolder : MonoBehaviour
     private GameObject[] myElements;
     public Animator fadeAnim;
     private int index = 0;
+    public string nextScene;
 
     private void Awake()
     {
         FillAnimatic();
+    }
+
+    private void Start()
+    {
+        StartAnimatic();
     }
 
     public void StartAnimatic()
@@ -21,7 +28,7 @@ public class AnimaticHolder : MonoBehaviour
         myManager.canInteract = false;
         myManager.isAnimatic = true;
         myElements[0].SetActive(true);
-        fadeAnim.Play("fadeOut");
+        fadeAnim.Play("fadeIn");
     }
 
     public void FillAnimatic()
@@ -53,7 +60,7 @@ public class AnimaticHolder : MonoBehaviour
         index = 0;
         myManager.isAnimatic = false;
         myManager.ClosePanel();
-        fadeAnim.Play("fadeIn");
+        fadeAnim.Play("fadeOut");
         StartCoroutine(DisableElements());
     }
 
@@ -64,5 +71,20 @@ public class AnimaticHolder : MonoBehaviour
         {
             x.SetActive(false);
         }
+
+        if(this.gameObject.name == "Animatic 1")
+        {
+            AnimaticTracker.animatic1played = true;
+        }
+        else if (this.gameObject.name == "Animatic 2")
+        {
+            AnimaticTracker.animatic2played = true;
+        }
+        else if (this.gameObject.name == "Animatic 3")
+        {
+            AnimaticTracker.animatic3played = true;
+        }
+
+        SceneManager.LoadScene(nextScene);
     }
 }

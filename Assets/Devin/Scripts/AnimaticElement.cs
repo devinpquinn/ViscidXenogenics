@@ -14,7 +14,7 @@ public class AnimaticElement : MonoBehaviour
 
     private void Awake()
     {
-        myHolder.myManager.SetText(myText[0]);
+        myHolder.myManager.SetAnimaticText(myText[0]);
         index = 0;
     }
 
