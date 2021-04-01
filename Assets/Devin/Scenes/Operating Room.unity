@@ -541,8 +541,7 @@ MonoBehaviour:
   hoverCursor: {fileID: 2800000, guid: 187119223ad748948b792506fe4b7a46, type: 3}
   doorCursor: {fileID: 2800000, guid: 187119223ad748948b792506fe4b7a46, type: 3}
   goal: 1
-  moveOn: {fileID: 2634702887258329438}
-  moveOn2: {fileID: 0}
+  transitions: []
   nextScene: Containment Unit
   fadeScreen: {fileID: 809145192}
   isAnimatic: 0
@@ -1264,7 +1263,7 @@ MonoBehaviour:
   myManager: {fileID: 0}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
-  myScene: Containment Unit
+  myScene: Containment Room
 --- !u!1001 &5837086442516220553
 PrefabInstance:
   m_ObjectHideFlags: 0

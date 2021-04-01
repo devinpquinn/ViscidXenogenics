@@ -14,8 +14,7 @@ public class Manager : MonoBehaviour
     public Texture2D doorCursor;
     private int inspected = 0;
     public int goal;
-    public GameObject moveOn;
-    public GameObject moveOn2;
+    public List<GameObject> transitions;
     public string nextScene;
     public GameObject fadeScreen;
     private Text myText;
@@ -25,11 +24,13 @@ public class Manager : MonoBehaviour
     private void Start()
     {
         Cursor.SetCursor(normalCursor, Vector2.zero, CursorMode.Auto);
-        moveOn.SetActive(false);
-        moveOn2.SetActive(false);
         fadeScreen.SetActive(true);
         myText = popup.transform.Find("Text").GetComponent<Text>();
-        animaticText = animaticPopup.transform.Find("Text").GetComponent<Text>();
+        
+        if(animaticPopup != null)
+        {
+            animaticText = animaticPopup.transform.Find("Text").GetComponent<Text>();
+        }
         isAnimatic = false;
     }
 
@@ -56,8 +57,10 @@ public class Manager : MonoBehaviour
         inspected++;
         if(inspected >= goal)
         {
-            moveOn.SetActive(true);
-            moveOn2.SetActive(true);
+            foreach (GameObject item in transitions)
+            {
+                item.SetActive(true);
+            }
         }
     }
 

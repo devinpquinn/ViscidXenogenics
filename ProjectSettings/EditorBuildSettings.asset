@@ -8,9 +8,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Devin/Scenes/Entrance.unity
     guid: 52cf360ed11db8f43ad67f21fed0889d
-  - enabled: 0
-    path: Assets/Devin/Scenes/02_Car.unity
-    guid: 8bd604a0721c1b44eaec711698d31507
   - enabled: 1
     path: Assets/Devin/Scenes/Car.unity
     guid: cd4fe676543016942801fe285b45fa29

@@ -508,7 +508,7 @@ RectTransform:
   m_Children:
   - {fileID: 1944724204}
   m_Father: {fileID: 2036793186}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
@@ -801,9 +801,10 @@ MonoBehaviour:
   normalCursor: {fileID: 2800000, guid: d646b4d5bf577fb45b096c696b73f9af, type: 3}
   hoverCursor: {fileID: 2800000, guid: 187119223ad748948b792506fe4b7a46, type: 3}
   doorCursor: {fileID: 2800000, guid: 187119223ad748948b792506fe4b7a46, type: 3}
-  goal: 1
-  moveOn: {fileID: 2634702887258329438}
-  moveOn2: {fileID: 1271052645}
+  goal: 0
+  transitions:
+  - {fileID: 2634702887258329438}
+  - {fileID: 1271052645}
   nextScene: 
   fadeScreen: {fileID: 809145192}
   isAnimatic: 0
@@ -983,7 +984,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2036793186}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1597,7 +1598,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2036793186}
-  m_RootOrder: 9
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2029,9 +2030,9 @@ RectTransform:
   - {fileID: 127195331}
   - {fileID: 65010058}
   - {fileID: 2634702887258329437}
+  - {fileID: 1271052646}
   - {fileID: 309094293}
   - {fileID: 809145193}
-  - {fileID: 1271052646}
   - {fileID: 774539410}
   - {fileID: 546937700}
   - {fileID: 1455005866}
