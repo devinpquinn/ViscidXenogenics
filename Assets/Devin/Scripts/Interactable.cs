@@ -6,8 +6,8 @@ using UnityEngine.EventSystems;
 public class Interactable : MonoBehaviour, IPointerClickHandler, IPointerEnterHandler, IPointerExitHandler
 {
     public Manager myManager;
-    public CursorMode cursorMode = CursorMode.Auto;
-    public Vector2 hotSpot = Vector2.zero;
+    protected CursorMode cursorMode = CursorMode.Auto;
+    protected Vector2 hotSpot = Vector2.zero;
     private bool interacted = false;
 
     private void Start()
