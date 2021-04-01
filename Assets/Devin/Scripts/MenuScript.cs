@@ -6,10 +6,21 @@ using UnityEngine.SceneManagement;
 public class MenuScript : MonoBehaviour
 {
     public GameObject fadeout;
+    public GameObject infoScreen;
+    public GameObject creditsScreen;
 
     private void Awake()
     {
         fadeout.SetActive(true);
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            infoScreen.SetActive(false);
+            creditsScreen.SetActive(false);
+        }
     }
 
     public void StartGame()
