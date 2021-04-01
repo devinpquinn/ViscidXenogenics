@@ -15,6 +15,7 @@ public class Manager : MonoBehaviour
     private int inspected = 0;
     public int goal;
     public GameObject moveOn;
+    public GameObject moveOn2;
     public string nextScene;
     public GameObject fadeScreen;
     private Text myText;
@@ -25,6 +26,7 @@ public class Manager : MonoBehaviour
     {
         Cursor.SetCursor(normalCursor, Vector2.zero, CursorMode.Auto);
         moveOn.SetActive(false);
+        moveOn2.SetActive(false);
         fadeScreen.SetActive(true);
         myText = popup.transform.Find("Text").GetComponent<Text>();
         animaticText = animaticPopup.transform.Find("Text").GetComponent<Text>();
@@ -55,6 +57,7 @@ public class Manager : MonoBehaviour
         if(inspected >= goal)
         {
             moveOn.SetActive(true);
+            moveOn2.SetActive(true);
         }
     }
 

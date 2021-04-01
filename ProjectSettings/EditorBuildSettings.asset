@@ -6,9 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Devin/Scenes/01_Entrance.unity
+    path: Assets/Devin/Scenes/Entrance.unity
     guid: 52cf360ed11db8f43ad67f21fed0889d
-  - enabled: 1
+  - enabled: 0
     path: Assets/Devin/Scenes/02_Car.unity
     guid: 8bd604a0721c1b44eaec711698d31507
+  - enabled: 1
+    path: Assets/Devin/Scenes/Car.unity
+    guid: cd4fe676543016942801fe285b45fa29
+  - enabled: 1
+    path: Assets/Devin/Scenes/Reception.unity
+    guid: ff63317fce62ca943bf0657db184cf21
+  - enabled: 1
+    path: Assets/Devin/Scenes/Staff Room.unity
+    guid: eeae8714986dd4746ac91d12ff68559e
+  - enabled: 1
+    path: Assets/Devin/Scenes/Specimen Room.unity
+    guid: bdeb9b638a6fdad4aa2238df31aa82f6
+  - enabled: 1
+    path: Assets/Devin/Scenes/Operating Room.unity
+    guid: 2159a6b227ca3914fb11092c990ce176
+  - enabled: 1
+    path: Assets/Devin/Scenes/Containment Room.unity
+    guid: ee83e5f2f0ce8ad47bfacf1d745b2836
   m_configObjects: {}

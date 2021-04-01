@@ -329,7 +329,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 96b57f0ba7df2584c90dc30a0e7886be, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 99c4d768bfb2c76468eb96bdcc520757, type: 3}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -536,13 +536,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canInteract: 1
   popup: {fileID: 309094292}
+  animaticPopup: {fileID: 0}
   normalCursor: {fileID: 2800000, guid: d646b4d5bf577fb45b096c696b73f9af, type: 3}
   hoverCursor: {fileID: 2800000, guid: 187119223ad748948b792506fe4b7a46, type: 3}
   doorCursor: {fileID: 2800000, guid: 187119223ad748948b792506fe4b7a46, type: 3}
   goal: 4
   moveOn: {fileID: 2634702887258329438}
+  moveOn2: {fileID: 0}
   nextScene: 
   fadeScreen: {fileID: 809145192}
+  isAnimatic: 0
 --- !u!4 &762429660
 Transform:
   m_ObjectHideFlags: 0
@@ -852,7 +855,7 @@ PrefabInstance:
     - target: {fileID: 5858271606931251297, guid: a2f95a33070777349a24b45725599d6f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -3.5
+      value: -63.66967
       objectReference: {fileID: 0}
     - target: {fileID: 5858271606931251297, guid: a2f95a33070777349a24b45725599d6f,
         type: 3}
@@ -892,7 +895,7 @@ PrefabInstance:
     - target: {fileID: 5858271606931251297, guid: a2f95a33070777349a24b45725599d6f,
         type: 3}
       propertyPath: m_Pivot.x
-      value: 0.5
+      value: -0.18452409
       objectReference: {fileID: 0}
     - target: {fileID: 5858271606931251297, guid: a2f95a33070777349a24b45725599d6f,
         type: 3}
@@ -1224,7 +1227,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -301, y: -106}
+  m_AnchoredPosition: {x: 327, y: 139}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2634702887258329438
@@ -1261,7 +1264,7 @@ MonoBehaviour:
   myManager: {fileID: 0}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
-  myScene: 
+  myScene: 02_Car
 --- !u!1001 &5837086442516220553
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1333,12 +1336,12 @@ PrefabInstance:
     - target: {fileID: 5858271606931251297, guid: a2f95a33070777349a24b45725599d6f,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 44
+      value: 55
       objectReference: {fileID: 0}
     - target: {fileID: 5858271606931251297, guid: a2f95a33070777349a24b45725599d6f,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -182.1
+      value: -163
       objectReference: {fileID: 0}
     - target: {fileID: 5858271606931251297, guid: a2f95a33070777349a24b45725599d6f,
         type: 3}
