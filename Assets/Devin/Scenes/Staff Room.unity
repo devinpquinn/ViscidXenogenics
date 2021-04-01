@@ -930,10 +930,9 @@ MonoBehaviour:
   animaticPopup: {fileID: 0}
   normalCursor: {fileID: 2800000, guid: d646b4d5bf577fb45b096c696b73f9af, type: 3}
   hoverCursor: {fileID: 2800000, guid: 187119223ad748948b792506fe4b7a46, type: 3}
-  doorCursor: {fileID: 2800000, guid: 187119223ad748948b792506fe4b7a46, type: 3}
+  doorCursor: {fileID: 2800000, guid: be260a115ab2a5645a073c3f285bf729, type: 3}
   goal: 1
-  moveOn: {fileID: 2634702887258329438}
-  moveOn2: {fileID: 0}
+  transitions: []
   nextScene: Specimen Room
   fadeScreen: {fileID: 809145192}
   isAnimatic: 0
@@ -1722,7 +1721,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0, b: 0.85910463, a: 0.80784315}
+  m_Color: {r: 1, g: 0, b: 0.85910463, a: 0}
   m_RaycastTarget: 1
   m_Maskable: 1
   m_OnCullStateChanged:
