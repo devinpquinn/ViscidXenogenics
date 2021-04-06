@@ -1618,8 +1618,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myManager: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
   myScene: Reception
 --- !u!114 &1271052648
 MonoBehaviour:
@@ -2107,8 +2105,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -301, y: -106}
-  m_SizeDelta: {x: 75, y: 75}
+  m_AnchoredPosition: {x: -301.44, y: -111.74}
+  m_SizeDelta: {x: 127.1066, y: 86.481125}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2634702887258329438
 GameObject:
@@ -2142,8 +2140,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myManager: {fileID: 0}
-  cursorMode: 0
-  hotSpot: {x: 0, y: 0}
   myScene: Car
 --- !u!1001 &5837086442516220553
 PrefabInstance:
