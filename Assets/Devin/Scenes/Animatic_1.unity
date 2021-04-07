@@ -982,6 +982,7 @@ MonoBehaviour:
   elementsParent: {fileID: 358997133}
   fadeAnim: {fileID: 809145194}
   nextScene: Entrance
+  myCursor: {fileID: 2800000, guid: d646b4d5bf577fb45b096c696b73f9af, type: 3}
 --- !u!4 &1804617361
 Transform:
   m_ObjectHideFlags: 0

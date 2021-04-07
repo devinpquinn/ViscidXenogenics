@@ -41,7 +41,7 @@ public class Popup : Interactable
         }
     }
 
-    public void EndPopup()
+    public virtual void EndPopup()
     {
         myOverlay.SetActive(false);
         myManager.canInteract = true;
