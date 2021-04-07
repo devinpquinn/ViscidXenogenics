@@ -2210,8 +2210,8 @@ MonoBehaviour:
   myOverlay: {fileID: 785883104}
   popupText: {fileID: 780332744}
   myLines:
-  - It's a journal
-  - Bingo bongo
+  - A diary?
+  - It's signed "Demetri Green".  That's whose car I found.
   disableThis: 0
 --- !u!222 &2634702887258329426
 CanvasRenderer:
