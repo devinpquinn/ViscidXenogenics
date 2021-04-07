@@ -8,6 +8,7 @@ public class MenuScript : MonoBehaviour
     public GameObject fadeout;
     public GameObject infoScreen;
     public GameObject creditsScreen;
+    public GameObject uconncreditsScreen;
 
     private void Awake()
     {
@@ -20,6 +21,7 @@ public class MenuScript : MonoBehaviour
         {
             infoScreen.SetActive(false);
             creditsScreen.SetActive(false);
+            uconncreditsScreen.SetActive(false);
         }
     }
 

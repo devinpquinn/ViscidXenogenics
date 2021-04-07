@@ -1664,7 +1664,9 @@ MonoBehaviour:
   myManager: {fileID: 0}
   myOverlay: {fileID: 834815140}
   popupText: {fileID: 1217212687}
-  myLines: []
+  myLines:
+  - God, what is that thing?
+  - Let's hope this is just some fancy art project.
   disableThis: 0
 --- !u!114 &1217212687 stripped
 MonoBehaviour:
