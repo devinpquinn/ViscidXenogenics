@@ -520,7 +520,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - Just pourin the science juice
+  - Friday, May 20th, 2033.
+  - Specimen E-103 is a SUCCESS.
+  - "If you had told me last week that this little clump of cells was going to be
+    our golden child, I would\u2019ve laughed right in your face."
+  - "But here it is; the vitals are steady, no, thriving.  It\u2019s growing larger
+    and stronger each day, and shows great early signs of intellectual growth."
   myAnim: {fileID: 700974422}
   myHolder: {fileID: 0}
 --- !u!1 &762429658
@@ -724,8 +729,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - I need healing!
-  - Ok bro I gotchu
+  - Saturday, October 16th, 2033.
+  - "He\u2019s going to break.  They are going to break him."
+  - "These tests aren\u2019t even tests anymore, they\u2019re acts of brute cruelty
+    to punish Triton for not being the machine they want him to be.  I can\u2019t
+    understand why no one else can see him like I do."
+  - "He\u2019s not a killing machine, he is a living, breathing creature with a heart,
+    a brain, emotions..  The mental and emotional connection I have made with him
+    is beyond anything I could\u2019ve imagined."
+  - "No one believes me.  They won\u2019t let me observe him anymore, or even be
+    in the same room.  "
+  - "I need to know what they\u2019re doing to him, he doesn\u2019t deserve this. 
+    He deserves a normal life."
   myAnim: {fileID: 892092471}
   myHolder: {fileID: 0}
 --- !u!95 &892092471
@@ -851,7 +866,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - Patty cake patty cake
+  - Wednesday, July 26th, 2033.
+  - "Triton has continued to grow and flourish, even in his containment unit.  He
+    is actually getting too big for it, and we\u2019ll have to construct a larger
+    one soon."
+  - "Brain scans have proven monumentally impressive, the brain structure appears
+    to be even more complex than a human\u2019s with even more surface area and folding."
+  - No speech attempts have been detected with the other researchers, but I believe
+    Triton has made noises towards me.
+  - He just needs more time, they need to be patient with him like I am.
   myAnim: {fileID: 905298560}
   myHolder: {fileID: 0}
 --- !u!95 &905298560
@@ -1174,9 +1197,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - Mmm tube
-  - Green... yum
-  - Wanna drink the alien fetus
+  - Sunday, June 12th, 2033.
+  - "I\u2019ve become quite fond of it, and decided to call it Triton, after Neptune\u2019s
+    moon.  When I see the light in his eyes I see something so much brighter than
+    anything else before."
+  - All of the work it took to get to this point just falls away.
   myAnim: {fileID: 1845902244}
   myHolder: {fileID: 0}
 --- !u!95 &1845902244
@@ -1380,7 +1405,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - And then we, like, totally bonded
+  - Tuesday, September 11th, 2033.
+  - "They\u2019re becoming too impatient.  I told them, I TOLD THEM to let Triton
+    grow and live unaffected by the scientific and medical testing because interfering
+    could cause detrimental damage to his development."
+  - " I\u2019ve been completely and utterly ignored, even my pleas to the laboratory
+    manager and CEO have gone unanswered, laughed at, even."
+  - I am the reason Triton exists, I am the one who spliced the genes correctly and
+    helped him survive.  I am responsible for him.  Testing has gone way out of control.
+  - He's strong enough to withstand the tests, yes, but for how long?
+  - "I\u2019ve warned them, I don\u2019t know what else to do anymore."
   myAnim: {fileID: 1944895702}
   myHolder: {fileID: 0}
 --- !u!95 &1944895702

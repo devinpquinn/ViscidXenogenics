@@ -521,7 +521,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - Baby shark doo doo doo doo doo doo
+  - He's here.  He's been here this whole time.
+  - Alone.
+  - '"Triton.. that''s your name, right?"'
   myAnim: {fileID: 700974422}
   myHolder: {fileID: 0}
 --- !u!1 &713098380
@@ -577,7 +579,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - Ok bro
+  - ...
   myAnim: {fileID: 713098383}
   myHolder: {fileID: 0}
 --- !u!95 &713098383
@@ -851,7 +853,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - Dude literally chill tf out
+  - He already knew that, though.
+  - This poor creature has been suffering in this pit of despair it was designed
+    for.
+  - '"Let me help you."'
   myAnim: {fileID: 905298560}
   myHolder: {fileID: 0}
 --- !u!95 &905298560
@@ -977,7 +982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - Gimme dat hand
+  - '"I promise."'
   myAnim: {fileID: 1295706086}
   myHolder: {fileID: 0}
 --- !u!95 &1295706086
@@ -1300,8 +1305,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - Oh shit he angy
-  - He like that mf killed Newman in Jurassic Park
+  - '"I know what they''ve done to you here."'
+  - '"You didn''t deserve that, and it''s not your fault."'
   myAnim: {fileID: 1845902244}
   myHolder: {fileID: 0}
 --- !u!95 &1845902244
@@ -1683,8 +1688,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - Hit 'em with the ol' over the shoulder smolder
-  - Seriously nice back ridge bro
+  - Triton must feel protective of the other specimens.  They are technically clones
+    of him, after all.
+  - '"You did what you did to protect them, didn''t you?"'
+  - '"I won''t hurt them like they did."'
   myAnim: {fileID: 2146428765}
   myHolder: {fileID: 0}
 --- !u!95 &2146428765
