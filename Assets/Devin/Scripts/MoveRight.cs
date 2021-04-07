@@ -13,7 +13,7 @@ public class MoveRight : MonoBehaviour
     {
         if(myManager.canInteract)
         {
-            myCam.Translate(speed / 100, 0, 0);
+            myCam.Translate((speed / 100) * Time.deltaTime, 0, 0);
             if (myCam.position.x > limit_x)
             {
                 myCam.position = new Vector3(limit_x, myCam.transform.position.y, myCam.transform.position.z);

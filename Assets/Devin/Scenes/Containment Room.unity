@@ -2335,7 +2335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCam: {fileID: 519420032}
   myManager: {fileID: 762429659}
-  speed: 1
+  speed: 200
   limit_x: 8.89
 --- !u!65 &2100296886
 BoxCollider:
@@ -2401,7 +2401,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myCam: {fileID: 519420032}
   myManager: {fileID: 762429659}
-  speed: 1
+  speed: 200
 --- !u!65 &2138813653
 BoxCollider:
   m_ObjectHideFlags: 0

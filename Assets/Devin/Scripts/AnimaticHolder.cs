@@ -11,10 +11,12 @@ public class AnimaticHolder : MonoBehaviour
     public Animator fadeAnim;
     private int index = 0;
     public string nextScene;
+    public Texture2D myCursor;
 
     private void Awake()
     {
         FillAnimatic();
+        Cursor.SetCursor(myCursor, Vector2.zero, CursorMode.Auto);
     }
 
     private void Start()
