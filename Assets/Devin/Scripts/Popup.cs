@@ -17,6 +17,7 @@ public class Popup : Interactable
     {
         active = true;
         myOverlay.SetActive(true);
+        myManager.canInteract = false;
         if(myLines.Count > 0)
         {
             popupText.text = myLines[0];
@@ -43,6 +44,7 @@ public class Popup : Interactable
     public void EndPopup()
     {
         myOverlay.SetActive(false);
+        myManager.canInteract = true;
         if(disableThis)
         {
             gameObject.SetActive(false);
