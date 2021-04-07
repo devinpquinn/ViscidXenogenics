@@ -732,7 +732,8 @@ MonoBehaviour:
   fadeout: {fileID: 1208945466}
   infoScreen: {fileID: 442296673}
   creditsScreen: {fileID: 130682793}
-  uconncreditsScreen: {fileID: 707751714}
+  uconnCreditsScreen: {fileID: 707751714}
+  myCursor: {fileID: 2800000, guid: d646b4d5bf577fb45b096c696b73f9af, type: 3}
 --- !u!1 &1116326430
 GameObject:
   m_ObjectHideFlags: 0

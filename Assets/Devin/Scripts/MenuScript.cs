@@ -8,11 +8,13 @@ public class MenuScript : MonoBehaviour
     public GameObject fadeout;
     public GameObject infoScreen;
     public GameObject creditsScreen;
-    public GameObject uconncreditsScreen;
+    public GameObject uconnCreditsScreen;
+    public Texture2D myCursor;
 
     private void Awake()
     {
         fadeout.SetActive(true);
+        Cursor.SetCursor(myCursor, Vector2.zero, CursorMode.Auto);
     }
 
     private void Update()
@@ -21,7 +23,7 @@ public class MenuScript : MonoBehaviour
         {
             infoScreen.SetActive(false);
             creditsScreen.SetActive(false);
-            uconncreditsScreen.SetActive(false);
+            uconnCreditsScreen.SetActive(false);
         }
     }
 
