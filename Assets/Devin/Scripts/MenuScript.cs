@@ -27,6 +27,11 @@ public class MenuScript : MonoBehaviour
         }
     }
 
+    public void ExitGame()
+    {
+        StartCoroutine(QuitGame());
+    }
+
     public void StartGame()
     {
         StartCoroutine(LoadGame());
@@ -37,5 +42,12 @@ public class MenuScript : MonoBehaviour
         fadeout.GetComponent<Animator>().Play("fadeOut");
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene("Animatic_1");
+    }
+
+    IEnumerator QuitGame()
+    {
+        fadeout.GetComponent<Animator>().Play("fadeOut");
+        yield return new WaitForSeconds(1f);
+        Application.Quit();
     }
 }
