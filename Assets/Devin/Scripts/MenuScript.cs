@@ -36,6 +36,6 @@ public class MenuScript : MonoBehaviour
     {
         fadeout.GetComponent<Animator>().Play("fadeOut");
         yield return new WaitForSeconds(1f);
-        SceneManager.LoadScene("Animatic_Open");
+        SceneManager.LoadScene("Animatic_1");
     }
 }
