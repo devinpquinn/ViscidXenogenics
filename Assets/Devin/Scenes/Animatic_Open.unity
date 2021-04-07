@@ -518,8 +518,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - So they handed me a folder..
-  - But nobody complimented my nails >:(
+  - I was employed for only a few months before the bureau assigned my first real
+    task.
+  - Handed a folder crudely stamped "CLASSIFIED", I opened it to assess the gravity
+    of the situation.
   myAnim: {fileID: 700974422}
   myHolder: {fileID: 0}
 --- !u!1 &762429658
@@ -723,9 +725,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - Keys, keys-- the magical fruit.
-  - I have a little alien head on my keychain. His name is Herbert, after my Uncle
-    Jack.
+  - There was no delaying.
+  - Keys in hand, I headed straight to the location for my first assignment not as
+    just Julitta, but as FBI Agent Doggart.
   myAnim: {fileID: 905298560}
   myHolder: {fileID: 0}
 --- !u!95 &905298560
@@ -1047,9 +1049,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myText:
-  - Inside the folder was a picture of a lab.
-  - The building, that is-- not the dog breed.
-  - That was a real shame. I like dogs.
+  - Inside the folder, a small photo of a lab.
+  - Paperwork showed the facility was called "Viscid Xenogenics", whatever that means.
+  - A wellness check for a business partner.  That's all it was supposed to be.
   myAnim: {fileID: 1845902244}
   myHolder: {fileID: 0}
 --- !u!95 &1845902244
